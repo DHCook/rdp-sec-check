@@ -215,6 +215,7 @@ sub scan_host {
 	print "[+] Connecting to $ip:$port\n" if $debug > 1;
 	my $socket;
 	my @response;
+	my %config;
 
 	print "[+] Checking supported protocols\n\n";
 	$socket = get_socket($ip, $port);
